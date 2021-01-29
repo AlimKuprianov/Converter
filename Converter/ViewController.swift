@@ -27,6 +27,8 @@ class ViewController: UIViewController {
         let tempSels = Int(round(sender.value))
         celsiusLabel.text = "\(tempSels)ºC"
         
+        let farengateTemperature = Int(round(sender.value * 9 / 5) + 32)
+        FarengateLabel.text = "\(farengateTemperature)ºF"
     }
     
     
